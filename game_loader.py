@@ -396,29 +396,29 @@ def getWorld():
     greeting = ""
     edoras = City("Edoras", description, greeting)
     #Eastfold - Aldburg
-    """
+    
     #Inn
-    description = ""
-    greeting = ""
-     = Inn("", description, greeting, 5)
+    description = "Seth n Breakfast? Money!."
+    greeting = "Stay Inn Here"
+    sethNBreakfastInn = Inn("Seth N Breakfast Inn", description, greeting, 5)
     #Shop
-    description = ""
-    greeting = ""
-     = Shop("", description, greeting, 5, 4)
+    description = "Chopin liked us."
+    greeting = "We chop at the shop, chop chop. Next door to Miles'."
+    chopShop = Shop("Chop Shop Factory", description, greeting, 5, 4)
     #Square
-    description = ""
-    greeting = ""
+    description = "Miles here, Miles there. This is the square of Miles. Less than a mile wide."
+    greeting = "Welcome to the square of Miles! Cookies around for miles."
     talk = {}
-     = Square("", description, greeting, talk)
-    """
+    squareOfMiles = Square("Square of Miles", description, greeting, talk)
+    
     #City
     description = """Aldburg was built by Eorl in the region known as the Folde,
     east of Edoras. The Kings of Rohan moved to Edoras after Brego, son of Eorl,
     completed the Golden Hall, but many centuries later there were still nobles
     living at Aldburg, including Eomer, son of Eomund.
     """
-    greeting = ""
-    aldburg = City("Aldburg", description, greeting)
+    greeting = "Welcome to Aldburg, the we-have-it-all-burg!"
+    aldburg = City("Aldburg", description, greeting, buildings = [sethNBreakfastInn, chopShop, squareOfMiles])
     #Eastfold
     description = """Eastfold is a part of the realm of Rohan. Bounded
     by the Mering Stream and Snowbourn River, it contains the city of
